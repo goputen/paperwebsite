@@ -1,5 +1,5 @@
 <?php
-include "./config/connection.php";
+include ".MIT/config/connection.php";
 
 session_start();
 if(!isset($_SESSION['fullname'])){
