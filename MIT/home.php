@@ -12,8 +12,8 @@ if(!isset($_SESSION['fullname'])){
 
 <?php
 
-$imagelogo= "http://localhost/MIT/images/mitlogo.png";
-$collegelogo="http://localhost/MIT/images/college.png";
+$imagelogo= "./MIT/images/mitlogo.png";
+$collegelogo="./MIT/images/college.png";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +22,9 @@ $collegelogo="http://localhost/MIT/images/college.png";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIT question paper website</title>
-    <link rel="icon" href="http://localhost/MIT/images/mitlogo.png">
-    <link rel="stylesheet" href="http://localhost/MIT/style.css">
-    <link rel="stylesheet" href="http://localhost/MIT/navbar.css">
+    <link rel="icon" href="./MIT/images/mitlogo.png">
+    <link rel="stylesheet" href="./MIT/style.css">
+    <link rel="stylesheet" href="./MIT/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -43,9 +43,9 @@ $collegelogo="http://localhost/MIT/images/college.png";
 
     <div class="icon-bar">
         <a class="active" href="#"><i class="fa fa-home"></i></a>
-        <a href="http://localhost/MIT/search.php"><i class="fa fa-search"></i></a>
-        <a href="http://localhost/MIT/download.php"><i class="fa-solid fa-download"></i></a>
-        <a href="http://localhost/MIT/profile.php"><i class="fa-solid fa-user"></i></a>
+        <a href="./MIT/search.php"><i class="fa fa-search"></i></a>
+        <a href="./MIT/download.php"><i class="fa-solid fa-download"></i></a>
+        <a href="./MIT/profile.php"><i class="fa-solid fa-user"></i></a>
     </div>
 
 
@@ -56,7 +56,7 @@ $collegelogo="http://localhost/MIT/images/college.png";
     <div class="navbar-div">
         <div class="image-logo"></div>
         <div class="name-college">
-            <a href="http://localhost/MIT/home.php" style="text-decoration: none;">
+            <a href="./MIT/home.php" style="text-decoration: none;">
                 <p>MIT RISHIKESH DHALWALA</p>
             </a>
         </div>
@@ -80,7 +80,7 @@ $collegelogo="http://localhost/MIT/images/college.png";
 
 
 
-    <a href="http://localhost/MIT/learning/learning.php">
+    <a href="./MIT/learning/learning.php">
         <section class="learning-section">
             <h1>Start Learning From Here</h1>
             <p>Click here and Learn all topics or concept of your course!</p>
@@ -96,19 +96,19 @@ $collegelogo="http://localhost/MIT/images/college.png";
                 <i class="fas fa-graduation-cap icon"></i>
                 <h2>BCA 1ST YEAR</h2>
                 <p>Welcome to the first year of BCA program. Explore the fundamentals of computer science.</p>
-                <a href="http://localhost/MIT/BCA/BCA1ST.php" class="button">Click Here!</a>
+                <a href="./MIT/BCA/BCA1ST.php" class="button">Click Here!</a>
             </div>
             <div class="bca-year-subpart">
                 <i class="fas fa-graduation-cap icon"></i>
                 <h2>BCA 2ND YEAR</h2>
                 <p>Advance your skills and knowledge in computer applications during the second year of BCA.</p>
-                <a href="http://localhost/MIT/BCA/BCA2ND.php" class="button">Click Here!</a>
+                <a href="./MIT/BCA/BCA2ND.php" class="button">Click Here!</a>
             </div>
             <div class="bca-year-subpart">
                 <i class="fas fa-graduation-cap icon"></i>
                 <h2>BCA 3RD YEAR</h2>
                 <p>Complete your BCA journey with specialized courses and practical experience in the third year.</p>
-                <a href="http://localhost/MIT/BCA/BCA3RD.php" class="button">Click Here!</a>
+                <a href="./MIT/BCA/BCA3RD.php" class="button">Click Here!</a>
             </div>
 
             <div class="bca-year-section">
@@ -166,19 +166,19 @@ $collegelogo="http://localhost/MIT/images/college.png";
             <i class="fas fa-book-open icon"></i>
             <h2>BCA 1st Year Notes</h2>
             <p>Access notes for the first year of BCA program.</p>
-            <a href="http://localhost/MIT/notes/bca1stnotes.php" class="button">View Notes</a>
+            <a href="./MIT/notes/bca1stnotes.php" class="button">View Notes</a>
         </div>
         <div class="notes-subpart">
             <i class="fas fa-book-open icon"></i>
             <h2>BCA 2nd Year Notes</h2>
             <p>Access notes for the second year of BCA program.</p>
-            <a href="http://localhost/MIT/notes/bca2ndnotes.php" class="button">View Notes</a>
+            <a href="./MIT/notes/bca2ndnotes.php" class="button">View Notes</a>
         </div>
         <div class="notes-subpart">
             <i class="fas fa-book-open icon"></i>
             <h2>BCA 3rd Year Notes</h2>
             <p>Access notes for the third year of BCA program.</p>
-            <a href="http://localhost/MIT/notes/bca3rdnotes.php" class="button">View Notes</a>
+            <a href="./MIT/notes/bca3rdnotes.php" class="button">View Notes</a>
         </div>
     </div>
 
@@ -196,7 +196,7 @@ $collegelogo="http://localhost/MIT/images/college.png";
         <div class="footer-container">
             <div class="footer-section">
                 <div class="brand-logo">
-                    <img src="http://localhost/MIT/images/mitlogo.png" alt="Logo">
+                    <img src="./MIT/images/mitlogo.png" alt="Logo">
                 </div>
                 <div class="footer-info">
                     <p><i class="fas fa-map-marker-alt"></i> <span>Address:</span> DHALWALA, City, RISHIKESH</p>
@@ -207,8 +207,8 @@ $collegelogo="http://localhost/MIT/images/college.png";
             <div class="footer-section">
                 <h3>Important Links</h3>
                 <ul>
-                    <li><a href="http://localhost/MIT/home.php">Home</a></li>
-                    <li><a href="http://localhost/MIT/aboutus.php">About Us</a></li>
+                    <li><a href="./MIT/home.php">Home</a></li>
+                    <li><a href="./MIT/aboutus.php">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">HNBGU Official website</a></li>
                     <li><a href="#">FAQ</a></li>
