@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics and Answers</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            /* Background color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        h1:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .topic {
+            margin-bottom: 30px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .topic-title {
+            margin-top: 0;
+            cursor: pointer;
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .topic-title:hover {
+            color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 1.1rem;
+            color: #555;
+            transition: opacity 0.3s ease;
+        }
+
+        .answer p {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learning - Programming In C</h1>
+
+    <div class="topic">
+        <h2 class="topic-title">Introduction</h2>
+        <div class="answer">
+            <p>
+            <div class="container">
+                <h2>Introduction to C Programming</h2>
+
+                <p>C is a general-purpose, procedural programming language that was developed by Dennis Ritchie at Bell
+                    Labs in the early 1970s. It was designed to be a system programming language and has since become
+                    one of the most widely used programming languages of all time.</p>
+
+                <h2>Why Learn C?</h2>
+
+                <p>There are several reasons why learning C can be beneficial:</p>
+
+                <ul>
+                    <li><strong>Widely Used:</strong> C is used in a wide range of applications, including operating
+                        systems, embedded systems, and system software.</li>
+                    <li><strong>Efficiency:</strong> Programs written in C are typically fast and efficient due to its
+                        low-level features and direct access to hardware.</li>
+                    <li><strong>Portability:</strong> C code can be compiled to run on various platforms with minimal
+                        modifications, making it highly portable.</li>
+                    <li><strong>Foundation for other languages:</strong> Many other programming languages, such as C++,
+                        Java, and Python, are influenced by or built upon C, so learning C provides a strong foundation
+                        for learning other languages.</li>
+                    <li><strong>Understanding of computer architecture:</strong> C exposes programmers to low-level
+                        concepts such as memory management and pointers, which helps in understanding computer
+                        architecture and how programs interact with hardware.</li>
+                </ul>
+            </div>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2 class="topic-title">first program</h2>
+        <div class="answer">
+            <p>
+            <div class="container">
+                <p>
+                <h2>Basic Structure of a C Program</h2>
+
+                <p>Every C program consists of one or more functions. The main function is the entry point of the
+                    program, where execution begins. Here's the basic structure of a C program:</p>
+
+                <pre>
+            <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    // Statements
+    return 0;
+}
+            </code>
+        </pre>
+
+                <p>In the above program:</p>
+                <ul>
+                    <li><code>#include &lt;stdio.h&gt;</code>: This line includes the standard input/output library,
+                        which provides functions like <code>printf</code> and <code>scanf</code>.</li>
+                    <li><code>int main()</code>: This is the main function of the program. It's where the execution of
+                        the program begins.</li>
+                    <li><code>// Statements</code>: These are the statements or instructions that perform the desired
+                        tasks of the program.</li>
+                    <li><code>return 0;</code>: This statement indicates the successful completion of the program and
+                        returns an exit status of 0 to the operating system.</li>
+                </ul>
+
+                <h2>Writing Your First C Program</h2>
+
+                <p>Let's write a simple "Hello, World!" program in C:</p>
+
+                <pre>
+            <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+            </code>
+        </pre>
+
+                <p>Save the above code in a file with a <code>.c</code> extension, for example, <code>hello.c</code>.
+                </p>
+
+                <h2>Compiling and Running Your Program</h2>
+
+                <p>To compile and run your C program:</p>
+                <ol>
+                    <li>Open a terminal or command prompt.</li>
+                    <li>Navigate to the directory where your <code>.c</code> file is located.</li>
+
+                    <li>Run the executable file generated by the compiler.</li>
+                </ol>
+
+
+                <p>And then run the executable:</p>
+
+                <pre><code>./hello</code></pre>
+            </div>
+
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2 class="topic-title">variable and data-types</h2>
+        <div class="answer">
+            <p>
+            <div class="container">
+                <!-- Previous content -->
+
+                <h2>Variables and Data Types</h2>
+
+                <p>In C programming, variables are used to store data that can be manipulated or processed by the
+                    program. Each variable has a data type, which determines the type of data it can store and the
+                    operations that can be performed on it.</p>
+
+                <h3>Data Types in C</h3>
+
+                <p>C provides several basic data types, including:</p>
+
+                <ul>
+                    <li><code>int</code>: Integer data type (e.g., <code>42</code>, <code>-10</code>, <code>0</code>)
+                    </li>
+                    <li><code>float</code>: Floating-point data type (e.g., <code>3.14</code>, <code>-0.5</code>,
+                        <code>2.0</code>)
+                    </li>
+                    <li><code>double</code>: Double-precision floating-point data type (e.g., <code>3.14159</code>,
+                        <code>-123.456</code>)
+                    </li>
+                    <li><code>char</code>: Character data type (e.g., <code>'A'</code>, <code>'b'</code>,
+                        <code>'$'</code>)
+                    </li>
+                    <li><code>void</code>: Represents the absence of data type</li>
+                    <li><code>bool</code>: Boolean data type (not available in standard C, but commonly used in C99 and
+                        later versions)</li>
+                </ul>
+
+                <p>C also supports modifiers, which can be used with data types to modify their behavior or storage
+                    size. Some common modifiers include:</p>
+
+                <ul>
+                    <li><code>short</code>: Shortens the storage size of an integer (e.g., <code>short int</code>)</li>
+                    <li><code>long</code>: Lengthens the storage size of an integer or floating-point number (e.g.,
+                        <code>long int</code>, <code>long double</code>)
+                    </li>
+                    <li><code>unsigned</code>: Specifies that a variable can only hold non-negative values (e.g.,
+                        <code>unsigned int</code>)
+                    </li>
+                </ul>
+
+                <h3>Variable Naming Conventions</h3>
+
+                <p>When naming variables in C, it's important to follow certain conventions:</p>
+
+                <ul>
+                    <li>Variable names can consist of letters, digits, and underscores.</li>
+                    <li>Variable names must begin with a letter or underscore.</li>
+                    <li>Variable names are case-sensitive (e.g., <code>count</code> and <code>Count</code> are different
+                        variables).</li>
+                    <li>Choose meaningful and descriptive names for variables to make your code more readable.</li>
+                    <li>Follow a consistent naming convention, such as camelCase or snake_case.</li>
+                </ul>
+
+                <h3>Example</h3>
+
+                <p>Here's an example program that demonstrates the use of additional data types and modifiers:</p>
+
+                <pre>
+                        <code>
+            #include &lt;stdio.h&gt;
+            
+            int main() {
+                short int distance = 100;
+                long double pi = 3.141592653589793238;
+                unsigned int score = 95;
+            
+                printf("Distance: %hd\n", distance);
+                printf("Pi: %.15Lf\n", pi);
+                printf("Score: %u\n", score);
+            
+                return 0;
+            }
+                        </code>
+                    </pre>
+
+                <p>This program declares variables to store distance (short integer), the value of pi (long double), and
+                    score (unsigned integer), initializes them with values, and then prints their values to the console.
+                </p>
+            </div>
+
+            </p>
+        </div>
+    </div>
+    <div class="topic">
+        <h2 class="topic-title">operator</h2>
+
+        <div class="answer">
+            <p>
+            <div class="container">
+                <h2>Arithmetic Operators</h2>
+                <p>Arithmetic operators perform mathematical operations on operands. Examples include:</p>
+                <ul>
+                    <li>Addition (+): Adds two operands.</li>
+                    <li>Subtraction (-): Subtracts the second operand from the first.</li>
+                    <li>Multiplication (*): Multiplies two operands.</li>
+                    <li>Division (/): Divides the first operand by the second.</li>
+                    <li>Modulus (%): Returns the remainder of the division.</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                int a = 10, b = 3;
+                int sum = a + b; // sum will be 13
+                int difference = a - b; // difference will be 7
+                int product = a * b; // product will be 30
+                int quotient = a / b; // quotient will be 3
+                int remainder = a % b; // remainder will be 1
+                </pre>
+
+                <h2>Relational Operators</h2>
+                <p>Relational operators compare the values of two operands. Examples include:</p>
+                <ul>
+                    <li>Equal to (==): Returns true if the operands are equal.</li>
+                    <li>Not equal to (!=): Returns true if the operands are not equal.</li>
+                    <li>Greater than (>): Returns true if the first operand is greater than the second.</li>
+                    <li>Less than (<): Returns true if the first operand is less than the second.</li>
+                    <li>Greater than or equal to (>=): Returns true if the first operand is greater than or equal to the
+                        second.</li>
+                    <li>Less than or equal to (<=): Returns true if the first operand is less than or equal to the
+                            second.</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                int x = 5, y = 10;
+                if (x == y) {
+                    // This condition won't be met
+                }
+                if (x != y) {
+                    // This condition will be met
+                }
+                if (x > y) {
+                    // This condition won't be met
+                }
+                if (x < y) {
+                    // This condition will be met
+                }
+            </pre>
+
+                <h2>Logical Operators</h2>
+                <p>Logical operators are used to perform logical operations. Examples include:</p>
+                <ul>
+                    <li>Logical AND (&&): Returns true if both operands are true.</li>
+                    <li>Logical OR (||): Returns true if at least one of the operands is true.</li>
+                    <li>Logical NOT (!): Returns true if the operand is false, and false if the operand is true.</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                int p = 1, q = 0;
+                if (p && q) {
+                    // This condition won't be met
+                }
+                if (p || q) {
+                    // This condition will be met
+                }
+                if (!q) {
+                    // This condition will be met
+                }
+            </pre>
+
+                <h2>Bitwise Operators</h2>
+                <p>Bitwise operators perform operations on individual bits of operands. Examples include:</p>
+                <ul>
+                    <li>Bitwise AND (&): Performs a bitwise AND operation.</li>
+                    <li>Bitwise OR (|): Performs a bitwise OR operation.</li>
+                    <li>Bitwise XOR (^): Performs a bitwise exclusive OR operation.</li>
+                    <li>Bitwise NOT (~): Performs a bitwise NOT operation.</li>
+                    <li>Left shift (<<): Shifts the bits of the first operand to the left by the number of positions
+                            specified by the second operand.</li>
+                    <li>Right shift (>>): Shifts the bits of the first operand to the right by the number of positions
+                        specified by the second operand.</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                unsigned int a = 5, b = 3;
+                unsigned int result_and = a & b; // result will be 1
+                unsigned int result_or = a | b; // result will be 7
+                unsigned int result_xor = a ^ b; // result will be 6
+                unsigned int result_not = ~a; // result will be 4294967290 (assuming 32-bit integers)
+                unsigned int result_left_shift = a << 1; // result will be 10
+                unsigned int result_right_shift = a >> 1; // result will be 2
+            </pre>
+
+                <h2>Assignment Operators</h2>
+                <p>Assignment operators are used to assign values to variables. Examples include:</p>
+                <ul>
+                    <li>Assignment (=): Assigns the value of the right operand to the left operand.</li>
+                    <li>Compound assignment (+=, -=, *=, /=, %=, &=, |=, ^=, <<=,>>=): Combines an arithmetic or bitwise
+                            operation with assignment.</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                int x = 5;
+                x += 3; // Equivalent to x = x + 3, x will be 8
+            </pre>
+
+                <h2>Ternary Operator</h2>
+                <p>The ternary operator (? :) is a conditional operator that evaluates an expression and returns one of
+                    two
+                    values depending on whether the expression is true or false.</p>
+                <p>Syntax: condition ? value_if_true : value_if_false</p>
+                <p>Example:</p>
+                <pre>
+                int x = 5, y = 10;
+                int max = (x > y) ? x : y; // max will be 10
+            </pre>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <div class="topic">
+        <h3 class="topic-title">control flow</h3>
+        <div class="answer">
+
+            <section id="introduction">
+                <h2>IF-ELSE</h2>
+                <p>The `if-else` statement is a fundamental control flow structure in C programming. It allows
+                    your
+                    code
+                    to make decisions based on conditions, executing different blocks of code depending on
+                    whether
+                    the
+                    condition is true or false.</p>
+            </section>
+
+            <section id="syntax">
+                <h2>Syntax</h2>
+                <pre>
+                if (condition) {
+                    // code to execute if condition is true
+                } else {
+                    // code to execute if condition is false (optional)
+                }
+        </pre>
+                <p>Here, `condition` is any expression that evaluates to true (non-zero) or false (zero). The
+                    code
+                    blocks within the `if` and `else` (if present) are executed based on the condition's
+                    evaluation.
+                </p>
+            </section>
+
+            <section id="examples">
+                <h2>Examples</h2>
+                <h3>1. Checking Even/Odd Numbers</h3>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+
+    return 0;
+}
+        </pre>
+                <p>This example checks if a user-entered number is even or odd. If the remainder of dividing by
+                    2 is
+                    0
+                    (even), the `if` block executes, otherwise the `else` block prints that the number is odd.
+                </p>
+
+                <h3>2. Finding the Largest of Three Numbers</h3>
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num1, num2, num3;
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    int largest = num1;  // Initialize largest with first number
+
+    if (num2 > largest) {
+        largest = num2;
+    }
+    if (num3 > largest) {
+        largest = num3;
+    }
+
+    printf("The largest number is: %d\n", largest);
+
+    return 0;
+}
+        </pre>
+                <p>This example finds the largest of three user-entered numbers. It initializes `largest` with
+                    the
+                    first
+                    number, then uses nested `if` statements to check if the second and third numbers are
+                    greater.
+                    If
+                    so, `largest` is updated.</p>
+            </section>
+
+
+            <div class="container">
+                <h2>Switch-Case Statement </h2>
+
+                <p>The switch-case statement in C provides a way to execute different blocks of code based on
+                    the
+                    value
+                    of an expression. It is often used as an alternative to long if-else chains when dealing
+                    with
+                    multiple possible conditions.</p>
+
+                <h2>Definition</h2>
+
+                <p>The switch-case statement evaluates the value of an expression and jumps to the corresponding
+                    case
+                    label. If a case label matches the value of the expression, the code block associated with
+                    that
+                    case
+                    is executed. The break statement is used to exit the switch statement after a case is
+                    matched,
+                    preventing fall-through to subsequent cases. Additionally, the default case provides a
+                    fallback
+                    option if none of the case labels match the expression, ensuring that your program behaves
+                    predictably even in unexpected scenarios.</p>
+
+                <h2>Syntax</h2>
+
+                <pre>
+            <code>
+switch (expression) {
+    case value1:
+        // Code to execute if expression equals value1
+        break;
+    case value2:
+        // Code to execute if expression equals value2
+        break;
+    // Additional case labels...
+    default:
+        // Code to execute if expression doesn't match any case
+}
+            </code>
+        </pre>
+
+                <h2>Example</h2>
+
+                <p>Here's an example demonstrating the usage of the switch-case statement:</p>
+
+                <pre>
+            <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int day = 4;
+
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        default:
+            printf("Weekend\n");
+    }
+
+    return 0;
+}
+            </code>
+        </pre>
+
+                <p>In this example, the value of the variable <code>day</code> is compared to different cases
+                    inside
+                    the
+                    switch statement. Depending on the value of <code>day</code>, the corresponding day of the
+                    week
+                    is
+                    printed. Since <code>day</code> is 4, it matches the case labeled 4, and "Thursday" is
+                    printed.
+                </p>
+
+            </div>
+
+
+            <br><br>
+            <div class="container">
+                <h2>Loops in C</h2>
+
+                <p>Loops are used in C programming to execute a block of code repeatedly. They allow you to
+                    automate
+                    repetitive tasks and iterate over data structures such as arrays. C provides three main
+                    types of
+                    loops: the while loop, the for loop, and the do-while loop.</p>
+
+                <h2>1. While Loop</h2>
+
+                <p>The while loop executes a block of code repeatedly as long as a specified condition is true.
+                </p>
+
+                <pre>
+                <code>
+    while (condition) {
+        // Code to execute
+    }
+                </code>
+            </pre>
+
+                <p>The condition is evaluated before each iteration. If it evaluates to true, the code block is
+                    executed. If it evaluates to false, the loop terminates.</p>
+
+                <h3>Example:</h3>
+
+                <pre>
+                <code>
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        int i = 0;
+    
+        while (i < 5) {
+            printf("%d ", i);
+            i++;
+        }
+    
+        return 0;
+    }
+                </code>
+            </pre>
+
+                <p>This program prints numbers from 0 to 4.</p>
+
+                <h2>2. For Loop</h2>
+
+                <p>The for loop executes a block of code for a specified number of times.</p>
+
+                <pre>
+                <code>
+    for (initialization; condition; increment/decrement) {
+        // Code to execute
+    }
+                </code>
+            </pre>
+
+                <p>The initialization is executed once before the loop starts. The condition is evaluated before
+                    each
+                    iteration. If it evaluates to true, the code block is executed. After each iteration, the
+                    increment/decrement statement is executed. If the condition evaluates to false, the loop
+                    terminates.
+                </p>
+
+                <h3>Example:</h3>
+
+                <pre>
+                <code>
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        for (int i = 0; i < 5; i++) {
+            printf("%d ", i);
+        }
+    
+        return 0;
+    }
+                </code>
+            </pre>
+
+                <p>This program also prints numbers from 0 to 4.</p>
+
+                <h2>3. Do-While Loop</h2>
+
+                <p>The do-while loop is similar to the while loop, but it always executes the code block at
+                    least
+                    once,
+                    even if the condition is false.</p>
+
+                <pre>
+                <code>
+    do {
+        // Code to execute
+    } while (condition);
+                </code>
+            </pre>
+
+                <p>The condition is evaluated after each iteration. If it evaluates to true, the loop continues.
+                    If
+                    it
+                    evaluates to false, the loop terminates.</p>
+
+                <h3>Example:</h3>
+
+                <pre>
+                <code>
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        int i = 0;
+    
+        do {
+            printf("%d ", i);
+            i++;
+        } while (i < 5);
+    
+        return 0;
+    }
+                </code>
+            </pre>
+
+                <p>This program also prints numbers from 0 to 4.</p>
+
+                <h2>Conclusion</h2>
+
+                <p>Loops are powerful constructs in C programming that allow you to automate repetitive tasks
+                    and
+                    iterate over data structures. Understanding how to use while, for, and do-while loops
+                    effectively is
+                    essential for writing efficient and concise code.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+<div class="topic">
+    <h2 class="topic-title">
+        Array
+    </h2>
+    <div class="answer">
+        <h2>Arrays</h2>
+        <p>An array in C is a collection of elements of the same data type, stored in contiguous memory locations. Arrays provide a convenient way to store and manipulate groups of related data items under a single name.</p>
+    
+        <h3>Declaration and Initialization</h3>
+        <p>To declare an array, you specify the type of elements it will hold, followed by its name and the number of elements enclosed in square brackets ([]).</p>
+        <pre>
+            type arrayName[arraySize];
+        </pre>
+        <p>For example:</p>
+        <pre>
+            int numbers[5]; // Declares an array of 5 integers
+            float temperatures[10]; // Declares an array of 10 floating-point numbers
+            char vowels[] = {'a', 'e', 'i', 'o', 'u'}; // Declares and initializes an array of characters
+        </pre>
+    
+        <h3>Accessing Elements</h3>
+        <p>Array elements are accessed using their index, which starts from 0 and goes up to size - 1. You can access individual elements using square brackets notation ([]).</p>
+        <pre>
+            numbers[0] = 10; // Assigns 10 to the first element of the numbers array
+            int x = numbers[2]; // Retrieves the value of the third element of the numbers array
+        </pre>
+    
+        <h3>Initialization</h3>
+        <p>Arrays can be initialized at the time of declaration or later using a loop or individual assignment. When initializing at the declaration, you enclose the initial values in curly braces ({}).</p>
+        <p>Example:</p>
+        <pre>
+            int squares[5] = {1, 4, 9, 16, 25}; // Initializes an array of squares
+            for (int i = 0; i < 10; i++) {
+                temperatures[i] = 0.0; // Initializes all elements of the temperatures array to 0.0
+            }
+        </pre>
+    
+        <h3>Multi-dimensional Arrays</h3>
+        <p>C supports multi-dimensional arrays, allowing you to create arrays of arrays. They are declared using multiple sets of square brackets.</p>
+        <pre>
+            int matrix[3][3]; // Declares a 3x3 matrix
+        </pre>
+    
+        <h3>Array Size and Bounds Checking</h3>
+        <p>C does not perform bounds checking on array accesses, meaning you can access or modify elements outside the bounds of the array, leading to undefined behavior. It's essential to ensure that array indices stay within the bounds of the array to avoid unexpected results or crashes.</p>
+    
+    </div>
+</div>
+
+    <!-- Add more topics and answers as needed -->
+
+    <script>
+        // Get all the topic titles
+        const topicTitles = document.querySelectorAll('.topic-title');
+
+        // Add click event listener to each topic title
+        topicTitles.forEach(title => {
+            title.addEventListener('click', () => {
+                // Toggle the display of the answer when a topic is clicked
+                const answer = title.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
