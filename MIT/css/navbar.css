@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.navbar-div {
+    display: flex;
+    border-bottom: 5px solid white;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+    padding-bottom: 35px;
+    background-color:#5299D3;
+}
+
+
+.image-logo {
+    background-image: url(/images/mitlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 210px;
+
+}
+
+.name-college {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+.name-college p {
+    font-size: 50px;
+    align-items: center;
+    padding: 0 0 0 20px;
+    word-spacing: 5px;
+    color: white;
+}
+
+
+
+.wrap-home-category {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+}
+
+
+
+option {
+    background: #2c3239;
+}
+
+@media screen and (max-width: 768px) {
+    .image-logo {
+        height: 140px;
+        width: 130px;
+    }
+
+
+    .navbar-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-college {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .name-college p {
+        font-size: 50px;
+        padding: 0 0 0 0px;
+        padding-top: 25px;
+        word-spacing: 0px;
+        color: white;
+    }
+}
+@media screen and (max-width: 425px) {
+
+
+    .name-college p {
+        font-size: 35px;
+    }
+
+}
+

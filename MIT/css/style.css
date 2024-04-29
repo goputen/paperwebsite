@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body {
+    background: #000000;
+    /* background: linear-gradient(red,green); */
+    background-color: #7EA1FF;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* navbar open */
+
+/* Responsive styles */
+
+
+/* 
+
+
+
+/* navbar close */
+
+
+
+
+
+/* section */
+hr {
+    width: 99.8%;
+    border: 1.5px solid white;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 98vw;
+    align-items: center;
+    position: relative;
+
+}
+
+.div-welcome-message {
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    color: orangered;
+
+}
+
+.div-welcome-message h3 {
+    color: white;
+    font-size: 80px;
+    -webkit-text-stroke: 1px black;
+
+}
+
+.div-welcome-message h2 {
+    color: orange;
+    font-size: 90px;
+    -webkit-text-stroke: 1px black;
+}
+
+.image-college {
+    background-image: url(/images/college.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid white;
+    width: 100%;
+    height: 350px;
+
+}
+
+@media screen and (max-width:768px) {
+
+    .image-college {
+        width: 100vw;
+        height: 260px;
+    }
+
+    .div-welcome-message h3 {
+        opacity: 1;
+        color: white;
+        font-size: 45px;
+    }
+
+    .div-welcome-message h2 {
+        opacity: 1;
+        color: orange;
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .image-college {
+
+        width: 100vw;
+        height: 260px;
+        border: 5px solid white;
+
+    }
+
+    marquee p {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .div-welcome-message {
+        text-align: center;
+    }
+
+    .div-welcome-message h3 {
+        opacity: 1;
+        color: white;
+        font-size: 40px;
+    }
+
+    .div-welcome-message h2 {
+        opacity: 1;
+        color: orange;
+        font-size: 50px;
+    }
+
+}
+
+.notice {
+    height: 30%;
+    margin: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+.marquee {
+
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background: #1b2937;
+}
+
+.marquee p {
+    margin: 10px;
+}
+
+
+
+/* section */
+
+
+
+
+/* wrap bca and it */
+.wrap-bca-it {
+    width: 98vw;
+    /* border: 2px solid black; */
+
+}
+
+.bca {
+
+    height: 300px;
+    /* border: 1px solid black; */
+    margin: 20px;
+
+}
+
+.bscit {
+    height: max-content;
+    /* border: 1px solid black; */
+    margin: 20px;
+}
+
+
+/* wrap bca and it */
+
+
+
+
+.bca {
+    height: max-content;
+}
+
+.wrap-bca-years {
+    padding: 20px;
+    background: linear-gradient(45deg, #023e8a, transparent);
+    border-radius: 5px;
+    border: 1.5px solid whitesmoke;
+    box-shadow: 7px 8px 30px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.heading-bca {
+    display: flex;
+    padding: 5px;
+}
+
+.icon {
+    width: 12px;
+    height: 50px;
+    background-color: red;
+    margin: 10px;
+}
+
+.heading {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+.heading h1 {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.year-wrap a {
+    width: 400px;
+    height: 250px;
+    /* border: 1px solid white; */
+    margin: 20px;
+}
+
+.year-wrap {
+    display: flex;
+}
+
+.bca-years img {
+    width: 100%;
+    height: 250px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .year-wrap {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bca-years {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .year-wrap a {
+        width: 80%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .year-wrap a {
+        width: 80%;
+    }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding: 20px;
+    background: #1b2937;
+    border-top: 3px solid white;
+    background: linear-gradient(to right, #001e69, #00206f);
+    color: white;
+
+}
+
+.important-link {
+    margin: 20px;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px solid black;
+        background: linear-gradient(to right, #001e69, #00206f);
+        padding: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+}
+
+.learning-section {
+    /* background:linear-gradient(to right rgb(0, 251, 255),rgb(6, 209, 255)); */
+    background-color: #3498db;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.learning-section h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.learning-section p {
+    font-size: 1.2em;
+}
